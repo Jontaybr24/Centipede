@@ -1,0 +1,153 @@
+*{
+	font-family: "Lucida Console", "Courier New", monospace;
+	text-align:center;
+	font-weight: bold;
+}
+
+body {
+    margin: 0;
+	background-color: rgb(0, 26, 36);
+    color: white;
+}
+
+#canvas-main {
+	background-color: black;
+	padding-left: 0;
+    padding-right: 0;
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#game {
+    margin: auto;
+    display: block;
+    font-size: 40px;
+}
+
+#game-play {
+	height: 400px;
+	position: relative;
+	width: 400px;
+}
+
+#game-play h1{
+    color: rgb(255, 255, 255);
+}
+
+#score-text {    
+    color: rgb(255, 255, 255);
+	position:absolute;
+	width: 100%;
+    top: 0px;
+}
+
+#game .screen {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#game .screen.active {
+    display: block;
+}
+
+#main-menu {
+    padding-top: 1em;
+    cursor: pointer;
+    font-size: 0.75em;
+}
+
+#death-menu {	
+    display: none;
+	position:absolute;
+	width: 100%;
+	top: 30%;
+}
+
+#pause-menu {	
+    display: none;
+	position:absolute;
+	width: 100%;
+	top: 30%;
+}
+
+#settings td{
+    text-align: center;
+    border:1px solid #000000;
+    padding: 5px;
+    width: 250px;
+}
+
+#settings table{
+    margin-left: 35%;
+    display: block;
+}
+
+#settings .screen{    
+    text-align: center;
+}
+
+#settings tr:hover{
+    background-color: rgba(255, 0, 0, 0.568);
+}
+
+.selected {    
+    background-color: #8104a0;
+}
+
+.bindings {
+    font-weight: lighter;
+}
+
+ul.menu {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.menu li {
+    margin: 0.8em 0;
+}
+
+ul.menu li button {
+    font-family: Arial, sans-serif;
+    font-size: 0.6em;
+    color: #CECEF6;
+    width: 10em;
+    height: 1.5em;
+    background: #8104a0;
+    border: 0.1em solid rgb(108, 106, 136);
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+ul.menu li button:hover {
+    background: #6d00a0;
+}
+
+ul.menu li button:active {
+    color: #8104a0;
+    background: #CECEF6;
+}
+
+#game div h1 {
+    font-size: 1em;
+    text-align: center;
+}
+
+#high-scores ol {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#game div p {
+    font-size: 0.5em;
+}
+
+#about p {
+    text-align: center;
+}

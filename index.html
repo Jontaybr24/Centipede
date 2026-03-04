@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Centipede</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="MyGame.game.initialize();">
+	<div id="game">
+		<div id="main-menu" class="screen">
+			<h1>Centipede</h1>
+			<ul class="menu">
+				<li><button id="id-new-game">New&nbsp;Game</button></li>
+				<li><button id="id-high-scores">High&nbsp;Scores</button></li>
+				<li><button id="id-settings">Settings</button></li>
+				<li><button id="id-about">About</button></li>
+			</ul>
+		</div>
+		<div id="game-play" class="screen">
+			<canvas id="canvas-main" width="1000" height="800" style="width: 50%; height: 50%"></canvas>
+			<p id="score-text">Score: 0</p>
+			<ul id="pause-menu" class="menu">
+				<h1>Paused</h1>
+				<li><button id="id-resume">Resume&nbsp;Game</button></li>
+				<li><button id="id-pause-back">Main&nbsp;Menu</button></li>
+			</ul>
+			<ul id="death-menu" class="menu">
+				<h1>Game Over</h1>
+				<li><button id="id-retry">Retry</button></li>
+				<li><button id="id-death-back">Main&nbsp;Menu</button></li>
+			</ul>
+		</div>
+		<div id="high-scores" class="screen">
+			<h1>High Scores</h1>
+			<div id="scores"></div>
+			<ul class="menu">
+				<li><button id="id-high-scores-back">Back</button></li>
+			</ul>
+		</div>
+		<div id="settings" class="screen">
+			<h1>Settings</h1>
+			<p>Controls</p>
+			<table id="controls">
+				<tr id="up-row">
+					<td>Move Up</td>
+					<td id="move-up" class="bindings"></td>
+				</tr> 
+				<tr id="left-row">
+					<td>Move Left</td>
+					<td id="move-left" class="bindings"></td>
+				</tr>
+				<tr id="down-row">
+					<td>Move Down</td>
+					<td id="move-down" class="bindings"></td>
+				</tr>
+				<tr id="right-row">
+					<td>Move Right</td>
+					<td id="move-right" class="bindings"></td>
+				</tr>
+				<tr id="fire-row">
+					<td>Fire</td>
+					<td id="fire" class="bindings"></td>
+				</tr>
+			</table>
+			<ul class="menu">
+				<li><button id="id-settings-back">Back</button></li>
+			</ul>
+		</div>
+		<div id="about" class="screen">
+			<h1>About</h1>
+			<p>Developed by</p>
+			<p>Jontay Reaves</p>
+			<p>Code Base Provided by</p>
+			<p>Dr. James Dean Mathias</p>
+			<ul class="menu">
+				<li><button id="id-about-back">Back</button></li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		let MyGame = {
+			screens: {},
+			input: {},
+			objects: {},
+			sounds: {},
+			render: []
+		};
+
+	</script>
+	<script src="scripts/objects/grid.js"></script>
+	<script src="scripts/objects/player.js"></script>
+	<script src="scripts/objects/centipede.js"></script>
+	<script src="scripts/objects/laser.js"></script>
+	<script src="scripts/objects/lives.js"></script>
+	<script src="scripts/objects/flea.js"></script>
+	<script src="scripts/objects/scorpion.js"></script>
+	<script src="scripts/objects/spider.js"></script>
+	<script src="scripts/objects/boom.js"></script>
+	<script src="scripts/objects/score.js"></script>
+
+	<script src="scripts/render/core.js"></script>
+	<script src="scripts/render/grid.js"></script>
+	<script src="scripts/render/laser.js"></script>
+	<script src="scripts/render/lives.js"></script>
+	<script src="scripts/render/player.js"></script>
+	<script src="scripts/render/score.js"></script>
+	<script src="scripts/render/centipede.js"></script>
+	<script src="scripts/render/animated-centipede-model.js"></script>
+
+	<script src="scripts/kb-input.js"></script>
+	<script src="scripts/sounds.js"></script>
+
+	<script src="scripts/game.js"></script>
+	<script src="scripts/mainmenu.js"></script>
+	<script src="scripts/settings.js"></script>
+	<script src="scripts/gameplay.js"></script>
+	<script src="scripts/highscores.js"></script>
+	<script src="scripts/about.js"></script>
+</body>
+
+</html>
